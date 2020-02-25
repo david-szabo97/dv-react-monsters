@@ -1,0 +1,87 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@1.1.6
+
+jobs:
+  test:
+    executor:
+      name: node/default
+    steps:
+      - checkout
+
+      - node/with-cache:
+          steps:
+            - run:
+                name: Install dependencies with Yarn
+                command: yarn install
+
+      - run:
+          name: Run tests
+          command: yarn test
+
+  build:
+    executor:
+      name: node/default
+    steps:
+      - checkout
+
+      - node/with-cache:
+          steps:
+            - run:
+                name: Install dependencies with Yarn
+                command: yarn install
+
+      - run:
+          name: Create a production build
+          command: yarn build
+
+      - persist_to_workspace:
+          root: build
+          paths:
+            - "*"
+
+  deploy:
+    executor:
+      name: node/default
+
+    steps:
+      - checkout
+
+      - attach_workspace:
+          at: build
+
+      - run:
+          name: Avoid hosts unknown for github
+          command: mkdir -p ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+
+      - run:
+          name: Deploy
+          command: |
+            mkdir -p dv-deploy
+            cd dv-deploy
+            yarn init -y
+            yarn add gh-pages
+            git config user.email "bot@circleci.com"
+            git config user.name "Circle CI"
+            yarn run gh-pages --dist ../build
+
+workflows:
+  version: 2.1
+  Build Test Deploy:
+    jobs:
+      - test:
+          filters:
+            branches:
+              ignore: gh-pages
+      - build:
+          filters:
+            branches:
+              ignore: gh-pages
+      - deploy:
+          requires:
+            - test
+            - build
+          filters:
+            branches:
+              only: master

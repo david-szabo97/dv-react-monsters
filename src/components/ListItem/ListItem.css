@@ -1,0 +1,43 @@
+.ListItem {
+  display: flex;
+}
+
+.ListItem__Elemental {
+  margin-right: 1rem;
+  font-size: 0;
+}
+
+.ListItem__Data {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.ListItem__Name {
+  font-size: 1.25rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding-right: 1rem;
+}
+
+.ListItem__Meta {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+}
+
+.ListItem__Meta .Icon {
+  margin-right: 0.25rem;
+}
+
+.ListItem__Meta__Item {
+  display: flex;
+  align-items: center;
+  width: 3.5rem;
+}
+
+.ListItem__Delete {
+  margin-left: auto;
+  cursor: pointer;
+}

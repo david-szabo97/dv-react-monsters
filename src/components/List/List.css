@@ -1,0 +1,13 @@
+.List {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #eee;
+  background: white;
+  margin-top: 1rem;
+}
+
+.List .ListItem + .ListItem {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #efefef;
+}

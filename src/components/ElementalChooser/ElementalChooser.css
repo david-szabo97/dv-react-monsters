@@ -1,0 +1,13 @@
+.ElementalChooser {
+  display: flex;
+  align-items: center;
+}
+
+.ElementalChooser .Icon {
+  margin: 0 1rem;
+}
+
+.ElementalChooser .Icon:first-child,
+.ElementalChooser .Icon:last-child {
+  cursor: pointer;
+}

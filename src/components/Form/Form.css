@@ -1,0 +1,58 @@
+.Form {
+  background: white;
+}
+
+.Form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #eee;
+}
+
+.Form__Row {
+  display: flex;
+  align-items: center;
+}
+
+.Form__Row + .Form__Row {
+  margin-top: 1rem;
+}
+
+.Form input[type="text"] {
+  font-size: 1.25rem;
+  border: 1px solid #eee;
+  font-size: 1.25rem;
+  padding: 0.125rem 0.25rem;
+  outline: 0;
+  transition: all 250ms;
+  text-align: center;
+  height: 1.5rem;
+  box-sizing: border-box;
+}
+
+.Form input[type="number"] {
+  width: 3rem;
+  font-size: 1.25rem;
+  border: 1px solid #eee;
+  font-size: 1.25rem;
+  padding: 0.125rem 0.25rem;
+  outline: 0;
+  transition: all 250ms;
+  text-align: center;
+  height: 1.5rem;
+  box-sizing: border-box;
+}
+
+.Form .Icon:nth-of-type(2) {
+  margin-left: 1rem;
+}
+
+.Form input[type="submit"] {
+  cursor: pointer;
+  background: black;
+  color: white;
+  font-size: 1.25rem;
+  padding: 0.25rem 2rem;
+  border: 0;
+}

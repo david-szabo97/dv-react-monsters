@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.18ae1aea.chunk.css",
+    "main.js": "/static/js/main.3a2e5a37.chunk.js",
+    "main.js.map": "/static/js/main.3a2e5a37.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.fc560f69.js",
+    "runtime-main.js.map": "/static/js/runtime-main.fc560f69.js.map",
+    "static/js/2.73426485.chunk.js": "/static/js/2.73426485.chunk.js",
+    "static/js/2.73426485.chunk.js.map": "/static/js/2.73426485.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.6237eed15ee410aae3e451c47e6303d8.js": "/precache-manifest.6237eed15ee410aae3e451c47e6303d8.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.18ae1aea.chunk.css.map": "/static/css/main.18ae1aea.chunk.css.map",
+    "static/js/2.73426485.chunk.js.LICENSE": "/static/js/2.73426485.chunk.js.LICENSE",
+    "static/media/air.cbec451b.svg": "/static/media/air.cbec451b.svg",
+    "static/media/arrow-left.5f142128.svg": "/static/media/arrow-left.5f142128.svg",
+    "static/media/arrow-right.de862de4.svg": "/static/media/arrow-right.de862de4.svg",
+    "static/media/attack.00f35d6d.svg": "/static/media/attack.00f35d6d.svg",
+    "static/media/defense.33bf631b.svg": "/static/media/defense.33bf631b.svg",
+    "static/media/earth.6388a1c2.svg": "/static/media/earth.6388a1c2.svg",
+    "static/media/fire.3ae90b92.svg": "/static/media/fire.3ae90b92.svg",
+    "static/media/logo.9a5e9524.svg": "/static/media/logo.9a5e9524.svg",
+    "static/media/trash-can.110484b1.svg": "/static/media/trash-can.110484b1.svg",
+    "static/media/water.358472ea.svg": "/static/media/water.358472ea.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fc560f69.js",
+    "static/js/2.73426485.chunk.js",
+    "static/css/main.18ae1aea.chunk.css",
+    "static/js/main.3a2e5a37.chunk.js"
+  ]
+}

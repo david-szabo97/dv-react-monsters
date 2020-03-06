@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9217b96748cfde4b15637356cfcfa532",
+    "revision": "0dad45b9e2d1d4db27ac2429016960e3",
     "url": "https://david-szabo97.github.io/dv-react-monsters/index.html"
   },
   {
-    "revision": "288575650f327d755d01",
+    "revision": "0241b1727ed7669b9bfc",
     "url": "https://david-szabo97.github.io/dv-react-monsters/static/css/main.18ae1aea.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://david-szabo97.github.io/dv-react-monsters/static/js/2.73426485.chunk.js.LICENSE"
   },
   {
-    "revision": "288575650f327d755d01",
-    "url": "https://david-szabo97.github.io/dv-react-monsters/static/js/main.acf2ecea.chunk.js"
+    "revision": "0241b1727ed7669b9bfc",
+    "url": "https://david-szabo97.github.io/dv-react-monsters/static/js/main.9d9d68b6.chunk.js"
   },
   {
     "revision": "b08133813a16aca9ecd3",

@@ -18,7 +18,12 @@ const Form = ({ onMonsterCreate }) => {
       elemental: data.elemental
     })
 
-    setData(initialDataState)
+    setData(prevData => ({
+      ...prevData,
+      name: '',
+      attack: 0,
+      defense: 0
+    }))
   }, [data, onMonsterCreate])
 
   const handleChange = useCallback((e) => {

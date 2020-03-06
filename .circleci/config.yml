@@ -73,15 +73,18 @@ workflows:
       - test:
           filters:
             branches:
-              ignore: gh-pages
+              ignore:
+                - gh-pages
       - build:
           filters:
             branches:
-              ignore: gh-pages
+              ignore:
+                - gh-pages
       - deploy:
           requires:
             - test
             - build
           filters:
             branches:
-              only: master
+              only:
+                - master
